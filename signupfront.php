@@ -24,11 +24,11 @@
             <input type="radio" id="socorg" name="foodorg" value="socorg"> Social Organization <br><br>
             Email: <input type="text" id="email" name="email"><br><br>
             Password: <input type="password" id="pword" name="pword"><br><br>
-            Contact Number: <input type="number" id="phn" name="phn"><br><br>
+            Contact Number: <input type="text" id="phn" name="phn"><br><br>
             Address:<input type="text" id="address" name="address"><br><br>
                 <input type="submit" value="OK" class="ok">  
                 <u>or</u>
-                <a href="login.html">
+                <a href="loginfront.php">
                     <input type="button" value="Log In " class="lin">
                 </a>
                
