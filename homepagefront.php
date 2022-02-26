@@ -11,16 +11,17 @@
 <body>
     <div class="header">
             <div class="logo">
-                <a href="homepage.html">
+                <a href="homepagefront.php">
                     <img src="leftover.png" alt="Logo">
                 </a>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="aboutus.html">About Us</a>  </li>
-                    <li><a href="contactus.html">Contact Us</a> </li>
-                    <li class="loginb"><a href="login.html">Log In</a>  </li>
-                    <li class="signupb"><a href="signup.html">Sign Up</a>  </li>
+                    
+                    <li class="loginb"><a href="login1front.php">Log In Food Org</a>  </li>
+                    <li class="loginb"><a href="login2front.php">Log In Soc Org</a>  </li>
+                    <li class="signupb"><a href="signup1front.php">Sign Up Food Org</a>  </li>
+                    <li class="signupb"><a href="signup2front.php">Sign Up Soc Org</a>  </li>
                     
                 </ul>
             </div>

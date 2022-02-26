@@ -8,7 +8,7 @@
     align-items: center; */
     justify-content: space-between;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     color: blanchedalmond;
     
 
@@ -17,7 +17,7 @@
     width: 150px;
 }
 .menu{
-    width: 50%;
+    width: 80%;
 }
 .menu ul{
     list-style-type:none;

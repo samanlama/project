@@ -10,20 +10,17 @@
 <body>
     <br><br><br><br>
     <div class="logo">
-        <a href="homepage.html">
+        <a href="homepagefront.php">
             <img src="leftover.png" alt="Logo">
         </a>
     </div>
     <div class="linform">
-        <form>
+        <form action="login.php" method="post">
         <h1>Log In Form</h1>
-        Username: <input type="text" id="uname" name="uname"><br><br>
+        Phone Number: <input type="text" id="phn" name="phn"><br><br>
         Password: <input type="password" id="pword" name="pword"><br><br>
         <input type="submit" value="OK" class="ok">  
-        <u>or</u>
-        <a href="signup.html">
-        <input type="button" value="Sign Up " class="sup" >
-        </a>
+        
     </form>
 
     </div>

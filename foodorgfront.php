@@ -10,7 +10,7 @@
 <body>
     <br><br>
     <div class="logo">
-        <a href="homepage.html">
+        <a href="homepagefront.php">
             <img src="leftover.png" alt="Logo">
         </a>
     </div>

@@ -11,17 +11,14 @@
 <body>
 
     <div class="logo">
-        <a href="homepage.html">
+        <a href="homepagefront.php">
             <img src="leftover.png" alt="Logo">
         </a>
     </div>
     <div class="suform">
         <form action="signup.php" method="post">
-           <h1> Sign Up Form </h1> 
+           <h1> Sign Up Form Social Organization </h1> 
             Company Name: <input type="text" id="cname" name="cname"><br><br>
-            Username: <input type="text" id="uname" name="uname"><br><br>
-            Category Type: <input type="radio" id="foodorg" name="foodorg" value="foodorg">Food Organization 
-            <input type="radio" id="socorg" name="foodorg" value="socorg"> Social Organization <br><br>
             Email: <input type="text" id="email" name="email"><br><br>
             Password: <input type="password" id="pword" name="pword"><br><br>
             Contact Number: <input type="text" id="phn" name="phn"><br><br>
@@ -31,7 +28,7 @@
                 <a href="loginfront.php">
                     <input type="button" value="Log In " class="lin">
                 </a>
-               
+            
             
            
 
