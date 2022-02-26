@@ -16,7 +16,7 @@
     </div>
     <div class="linform">
         <form action="login.php" method="post">
-        <h1>Log In Form Food Organization</h1>
+        <h1>Log In Form Social Organization</h1>
         Phone Number: <input type="text" id="phn" name="phn"><br><br>
         Password: <input type="password" id="pword" name="pword"><br><br>
         <input type="submit" value="OK" class="ok">  
