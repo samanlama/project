@@ -11,15 +11,15 @@
     <br><br>
     <div class="logo">
         <a href="homepagefront.php">
-            <img src="leftover.png" alt="Logo">
+            <img src="image/leftover.png" alt="Logo">
         </a>
     </div>
     <div class="entryform">
-        <form action="foodorg.php" method="post">
+        <form action="foodipback.php" method="post">
            <h1> Enter the food details </h1> 
-            <b>Food Title :</b><br><br> <textarea id="fdetails" name="fdetails" rows="2" cols="50" ></textarea><br><br><br>
+            <b>Food Title :</b><br><br> <textarea id="title" name="title" rows="2" cols="50" ></textarea><br><br><br>
             <!-- Food Details: <input type="textarea" id="fdetails" name="fdetails" rows="100" cols="50"><br><br> -->
-            <b>Food Details:</b><br><br> <textarea id="fdetails" name="fdetails" rows="10" cols="50"></textarea><br><br>
+            <b>Food Details:</b><br><br> <textarea id="details" name="details" rows="10" cols="50"></textarea><br><br>
 
                 <input type="submit" value="OK" class="ok">  
                 </form>

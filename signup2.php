@@ -2,19 +2,20 @@
 
 <?php
 
-$companyname=$_POST['cname'];
-$email=$_POST['email'];
-$password=$_POST['pword'];
+$com=$_POST['cname'];
+$mail=$_POST['email'];
+$pass=$_POST['pword'];
 $phn=$_POST['phn'];
-$address=$_POST['address'];
+$add=$_POST['address'];
 
 
 
 
 include "conn.php";
 
-$sql="insert into socorg (companyname, email, password, phn, address) values ('$companyname','$email','$password','$phn','$address')";
-
+$sql="INSERT INTO `socorg`(`companyname`, `email`, `password`, `phn`, `address`) VALUES ('$com','$mail','$pass','$phn','$add')";
+// die("$password");
+// echo "$password";
 $res= mysqli_query( $conn, $sql);
 
 if(!$res){

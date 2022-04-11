@@ -12,17 +12,17 @@
 
     <div class="logo">
         <a href="homepagefront.php">
-            <img src="leftover.png" alt="Logo">
+            <img src="image/leftover.png" alt="Logo">
         </a>
     </div>
     <div class="suform">
+        <h1> Sign Up Form</h1>
         <form action="signup1.php" method="post">
-           <h1> Sign Up Form Food Organization </h1> 
-            Company Name: <input type="text" id="cname" name="cname"><br><br>
-            Email: <input type="text" id="email" name="email"><br><br>
-            Password: <input type="password" id="pword" name="pword"><br><br>
-            Contact Number: <input type="text" id="phn" name="phn"><br><br>
-            Address:<input type="text" id="address" name="address"><br><br>
+            <div> Company Name: <input type="text" id="cname" name="cname"><br><br></div>
+            <div> <label> Email:</label> <input type="text" id="email" name="email"><br><br></div>
+            <div> Password: <input type="password" id="pword" name="pass"><br><br></div>
+            <div> Contact Number: <input type="text" id="phn" name="phn"><br><br></div>
+            <div> Address:<input type="text" id="address" name="address"><br><br></div>
                 <input type="submit" value="OK" class="ok">  
                 
                

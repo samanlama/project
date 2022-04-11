@@ -64,8 +64,8 @@
                 echo "<td>".$row['password']."</td>";
                 echo "<td>".$row['phn']."</td>";
                 echo "<td>".$row['address']."</td>";
-                // echo "<td><a class='update' href='update.php?id=".$row['ID']."  '>update </a> </td>";
-                // echo "<td><a class='delete' href='delete.php?id=".$row['ID']."  '>delete </a> </td>";
+                echo "<td><a class='update' href='update1.php?id=".$row['id']."  '>update </a> </td>";
+                echo "<td><a class='delete' href='delete1.php?id=".$row['id']."  '>delete </a> </td>";
                
                 echo "</tr>";
                 $ID++;

@@ -11,11 +11,11 @@
     <br><br><br><br>
     <div class="logo">
         <a href="homepagefront.php">
-            <img src="leftover.png" alt="Logo">
+            <img src="image/leftover.png" alt="Logo">
         </a>
     </div>
     <div class="linform">
-        <form action="login.php" method="post">
+        <form action="login2.php" method="post">
         <h1>Log In Form Social Organization</h1>
         Phone Number: <input type="text" id="phn" name="phn"><br><br>
         Password: <input type="password" id="pword" name="pword"><br><br>

@@ -1,8 +1,4 @@
-
-
 <?php
-
-
 //  $cname=$_POST['cname'];
 // $email=$_POST['email'];
 // $pword=$_POST['pword'];
@@ -33,21 +29,25 @@
 // else{
 //     echo'<script  type="text/javascript"> alert("Sign Up Succesfull")</script>';
 //  }
-include "conn.php";
 
-$com=$_POST['cname'];
-$mail=$_POST['email'];
-$password=$_POST['pass'];
+?>
+
+<?php
+
+$companyname=$_POST['cname'];
+$email=$_POST['email'];
+$password=$_POST['pword'];
 $phn=$_POST['phn'];
-$add=$_POST['address'];
+$address=$_POST['address'];
 
 // print_r($_POST);
 // echo $_POST['pword'];
 
-// die("$password");
+// die("$password $email");
 
+include "conn.php";
 
-$sql="INSERT INTO `foodorg`(`companyname`, `email`, `password`, `phn`, `address`) VALUES ('$com','$mail','$password','$phn','$add')";
+$sql="insert into foodorg (companyname, email, password, phn, address) VALUES ('$companyname','$email','$password','$phn','$address')";
 $res= mysqli_query( $conn, $sql);
 
 if(!$res){
