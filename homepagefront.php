@@ -17,12 +17,9 @@
             </div>
             <div class="menu">
                 <ul>
-                    
-                    <!-- <li class="loginb"><a href="login1front.php">Log In <br> Food Org</a>  </li>
-                    <li class="loginb"><a href="login2front.php">Log In Soc Org</a>  </li>
-                    <li class="signupb"><a href="signup1front.php">Sign Up Food Org</a>  </li>
-                    <li class="signupb"><a href="signup2front.php">Sign Up Soc Org</a>  </li> -->
-
+                
+                    <li>Home</li>
+                    <li>About Us</li>
                     <div class="dropdown">
                         <button class="dropbtn">Social Org</button>
                         <div class="dropdown-content">
@@ -43,7 +40,7 @@
         
         </div>
         <div class="all">
-            <img src="image/food kiddo.PNG" alt="">
+            <img src="image/food hope.png" alt="">
         </div>
 </body>
 </html>

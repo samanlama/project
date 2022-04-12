@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title> Admin Log In</title>
     <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
@@ -16,9 +16,8 @@
     </div>
     <div class="linform">
         
-        <h1>Log In Form </h1>
-        <p>(Food organization)</p>
-        <form action="login1.php" method="post">
+        <h1>Admin Log In  </h1>
+        <form action="adminloginback.php" method="post">
         Phone Number: <input type="text" id="phn" name="phn"><br><br>
         Password: <input type="password" id="pword" name="pword"><br><br>
         <input type="submit" value="OK" class="ok">  

@@ -11,7 +11,7 @@ $res= mysqli_query($conn,$sql);
     if(mysqli_num_rows($res)==1){
         echo'<script  type="text/javascript"> alert("Login Successful")</script>';
         //header
-        header("location:foodorgfront.php");
+        header("location:socorgtable.php");
     }
 else{
     echo'<script  type="text/javascript"> alert("Login Unsuccessful")</script>';

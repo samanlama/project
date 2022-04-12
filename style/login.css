@@ -1,13 +1,45 @@
 body{
-    background: rgb(6,5,14);
-    background: linear-gradient(90deg, rgba(6,5,14,1) 0%, rgba(7,27,10,1) 31%, rgba(21,0,33,1) 100%);
+     background: rgb(6,5,14);
+    /* background: linear-gradient(130deg, rgb(27, 74, 75) 0%, rgb(7, 23, 27) 31%, rgba(21,0,33,1) 100%); */
+    background: rgb(13,7,31);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     text-align: center;
 
+}
+.linform p{
+    margin-top: -20px;
+    font-size:25px;
+    font-weight: 500;
+    color: black;
+}
+input{
+
+    width: 100%;
+}
+.ok{
+    margin: 0 auto;
+}
+.linform form div{
+    width: 100%;
+}
+.linform form{
+    background-color: black;
+    color:white ;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 20px;
 }
 .linform{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    color: blanchedalmond;
+    color: rgb(7, 7, 7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     text-align: center;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
     <br><br><br><br>
@@ -15,11 +15,13 @@
         </a>
     </div>
     <div class="linform">
+       
+        <h1>Log In Form </h1>
+        <p>(Social organization)</p>
         <form action="login2.php" method="post">
-        <h1>Log In Form Social Organization</h1>
-        Phone Number: <input type="text" id="phn" name="phn"><br><br>
-        Password: <input type="password" id="pword" name="pword"><br><br>
-        <input type="submit" value="OK" class="ok">  
+             Phone Number: <input type="text" id="phn" name="phn"><br><br>
+             Password: <input type="password" id="pword" name="pword"><br><br>
+            <input type="submit" value="OK" class="ok"> 
         
     </form>
 

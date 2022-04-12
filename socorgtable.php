@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soc Org Data</title>
- 
+    <title>Details of the Foods</title>
+    <link rel="stylesheet" href="style/foodtable.css">
+    
 </head>
-<body>
+
+<br>
+
 <?php 
     
     if(!empty($_GET)){
@@ -23,44 +26,45 @@
     }
 
     ?>
-    <table border="1" style="width:50%">
+
+<div class="logo">
+<a href="homepagefront.php">
+                    <img src="image/leftover.png" alt="Logo">
+                </a>
+</div>
+    <h1>Available Food</h1>
+
+
+    <div class="tbl">
+    <table>
         <thead>
             <tr>
-                <th>ID:</th>
-                <th>Company Name:</th>
-                <th>Email</th>
-                <th>Password</th>
-                <th>Phone Number</th>
-                <th>Address</th>
-                <th>Update</th>
-                <th>Delete</th>
+                <th>Title</th>
+                <th>Details</th>
+                <th>Accept</th>
             </tr>
         </thead>
         <tbody>
+
             <?php
 
             include"conn.php";
 
-            $sql="SELECT * FROM socorg";
+            $sql="SELECT * FROM foodip";
             $res= mysqli_query( $conn, $sql);
 
             if(mysqli_num_rows($res)>0){
-                $ID=1;
+                //$ID=1;
 
             while($row=mysqli_fetch_assoc($res)){
 
                 echo "<tr>";
-                echo "<td>".$ID."</td>";
-                echo "<td>".$row['companyname']."</td>";
-                echo "<td>".$row['email']."</td>";
-                echo "<td>".$row['password']."</td>";
-                echo "<td>".$row['phn']."</td>";
-                echo "<td>".$row['address']."</td>";
-                echo "<td><a class='update' href='update2.php?id=".$row['id']."  '>update </a> </td>";
-                echo "<td><a class='delete' href='delete2.php?id=".$row['id']."  '>delete </a> </td>";
+                echo "<td>".$row['title']."</td>";
+                echo "<td>".$row['details']."</td>";
+             echo "<td><a class='delete' href='deleteadmin.php?id=".$row['ID']."  '>Accept </a> </td>";
                
                 echo "</tr>";
-                $ID++;
+                // $ID++;
                 }
             }
             else{
@@ -71,5 +75,6 @@
             ?>
         </tbody>
     </table>
+    </div>
 </body>
 </html>

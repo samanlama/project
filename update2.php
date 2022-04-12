@@ -14,6 +14,7 @@ if(mysqli_num_rows($res)>0){
     $row=mysqli_fetch_assoc($res);
 
 ?>
+
 <form action="updating2.php?id=<?php echo $id;?>"   method="post">
         
         Company Name: <input type="text" id="cname" name="cname" value="<?php echo $row['companyname'];?>"><br><br>

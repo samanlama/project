@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="style/signup.css">
     
 </head>
 <body>
@@ -17,6 +17,7 @@
     </div>
     <div class="suform">
         <h1> Sign Up Form</h1>
+        <p>(Food organization)</p>
         <form action="signup1.php" method="post">
             <div> Company Name: <input type="text" id="cname" name="cname"><br><br></div>
             <div> <label> Email:</label> <input type="text" id="email" name="email"><br><br></div>
