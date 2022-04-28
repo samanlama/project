@@ -1,3 +1,11 @@
+<?php
+   
+    session_start();
+if(!isset($_SESSION['name'])) {
+    header("Location: homepagefront.php?fail=true");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,13 +52,14 @@
                 <th>Accept</th>
             </tr>
         </thead>
+        
         <tbody>
 
             <?php
 
             include"conn.php";
 
-            $sql="SELECT * FROM foodip";
+            $sql="SELECT * FROM foodip where status='pending';";
             $res= mysqli_query( $conn, $sql);
 
             if(mysqli_num_rows($res)>0){
@@ -61,7 +70,7 @@
                 echo "<tr>";
                 echo "<td>".$row['title']."</td>";
                 echo "<td>".$row['details']."</td>";
-             echo "<td><a class='delete' href='deleteadmin.php?id=".$row['ID']."  '>Accept </a> </td>";
+             echo "<td><a class='delete' href='acceptadmin.php?id=".$row['ID']."  '>Accept </a> </td>";
                
                 echo "</tr>";
                 // $ID++;
@@ -73,8 +82,12 @@
 
 
             ?>
+            
         </tbody>
     </table>
+    </div>
+    <div class="lout">
+    <a href="logout.php">Log Out</a>
     </div>
 </body>
 </html>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +27,8 @@
             <b>Food Details:</b><br><br> <textarea id="details" name="details" rows="10" cols="50"></textarea><br><br>
 
                 <input type="submit" value="OK" class="ok">  
+
+                <a href="logout.php" class="lout">Log Out</a>
                 </form>
                 </div>
     

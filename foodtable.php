@@ -46,7 +46,7 @@
 
             include"conn.php";
 
-            $sql="SELECT * FROM foodip";
+            $sql="SELECT * FROM foodip WHERE status='pending'" ;
             $res= mysqli_query( $conn, $sql);
 
             if(mysqli_num_rows($res)>0){

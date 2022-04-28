@@ -1,10 +1,20 @@
+
+<?php
+   
+   session_start();
+if(!isset($_SESSION['name'])) {
+   header("Location: homepagefront.php?fail=true");
+   exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Food Org Data</title>
+    <link rel="stylesheet" href="style/table.css">
     <style>
         *{
             text-align:center;
@@ -34,8 +44,8 @@
     <table border="1" style="width:50%">
         <thead>
             <tr>
-                <th>ID:</th>
-                <th>Company Name:</th>
+                <th>ID</th>
+                <th>Company Name</th>
                 <th>Email</th>
                 <th>Password</th>
                 <th>Phone Number</th>

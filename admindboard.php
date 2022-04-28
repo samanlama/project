@@ -1,3 +1,12 @@
+
+<?php
+   
+   session_start();
+if(!isset($_SESSION['id'])) {
+   header("Location: homepagefront.php?fail=true");
+   exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +26,11 @@
             </div>
             <div class="menu">
                 <ul>
-                
+                <li><a href="status.php">Status</a></li>
                     <li><a href="table2.php">Social Org</a></li>
                     <li><a href="table1.php">Food Org</a></li>
                     <li><a href="foodtable.php">Food Details</a></li>
+                    <li><a href="logout.php">Log Out</a></li>
                     
                        
                      

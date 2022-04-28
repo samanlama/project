@@ -44,3 +44,11 @@ body{
   box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
   cursor: pointer;
 }
+.lout{
+  text-decoration: none;
+  padding: 2px 5px;
+  background-color: red;
+  margin: 0 auto;
+  margin-top: 20px;
+ color: #fff;
+}

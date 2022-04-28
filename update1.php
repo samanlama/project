@@ -1,4 +1,12 @@
 <?php
+   
+    session_start();
+if(!isset($_SESSION['name'])) {
+    header("Location: homepagefront.php?fail=true");
+    exit;
+}
+?>
+<?php
 
 include "conn.php";
 
@@ -14,16 +22,24 @@ if(mysqli_num_rows($res)>0){
     $row=mysqli_fetch_assoc($res);
 
 ?>
-<link rel="stylesheet" href="style/signup.css">
+<link rel="stylesheet" href="style/update2.css">
+<div class="logo">
+<a href="homepagefront.php">
+            <img src="image/leftover.png" alt="Logo">
+        </a>
+</div>
+
+<div class="suform">
 <form action="updating1.php?id=<?php echo $id;?>"   method="post">
         
-        Company Name: <input type="text" id="cname" name="cname" value="<?php echo $row['companyname'];?>"><br><br>
-            Email: <input type="text" id="email" name="email" value="<?php echo $row['email'];?>"><br><br>
-            Password: <input type="password" id="pword" name="pword" value="<?php echo $row['password'];?>"><br><br>
-            Contact Number: <input type="text" id="phn" name="phn" value="<?php echo $row['phn'];?>"><br><br>
-            Address:<input type="text" id="address" name="address" value="<?php echo $row['address'];?>"><br><br>
-        <input type="submit" value="UPDATE"><br>
+<div>Company Name: <input type="text" id="cname" name="cname" value="<?php echo $row['companyname'];?>"><br><br></div>
+           <div> Email: <input type="text" id="email" name="email" value="<?php echo $row['email'];?>"><br><br></div>
+           <div> Password: <input type="password" id="pword" name="pword" value="<?php echo $row['password'];?>"><br><br></div>
+           <div> Contact Number: <input type="text" id="phn" name="phn" value="<?php echo $row['phn'];?>"><br><br></div>
+          <div>Address:<input type="text" id="address" name="address" value="<?php echo $row['address'];?>"><br><br></div>
+        <input type="submit" value="UPDATE" class="ok"><br>
 </form>
+</div>
 
 <?php
 
