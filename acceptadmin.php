@@ -10,7 +10,7 @@ $sql= "UPDATE foodip SET `status` = 'success' WHERE foodip.id=$id ";
 $res= mysqli_query( $conn, $sql);
 
 if($res){
-    header('location:foodtable.php?delete=true');
+    header('location:socorgtable.php?delete=true');
 }
 else{
     die('error'.mysqli_error($conn));

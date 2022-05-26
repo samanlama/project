@@ -31,6 +31,7 @@ else if($passlen>8){
     echo'<script type="text/javascript"> alert(" Password must be less than 8 characters")</script>';
 }
 
+
 else{
     echo'<script  type="text/javascript"> alert("Sign Up Succesfull")</script>';
 include "conn.php";

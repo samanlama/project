@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details of the Foods</title>
-    <link rel="stylesheet" href="style/foodtable.css">
+    <link rel="stylesheet" href="style/table.css">
     <style>
         *{
             text-align:center;
@@ -16,6 +16,11 @@
         }
     </style>
 </head>
+<div class="logo">
+        <a href="admindboard.php">
+            <img src="image/leftover.png" alt="Logo">
+        </a>
+    </div>
 <body>
 <?php 
     
@@ -32,7 +37,7 @@
     }
 
     ?>
-    <table border="4" style="width:50%">
+    <table border="4" >
         <thead>
             <tr>
                 <th>Title:</th>

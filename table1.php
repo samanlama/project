@@ -25,6 +25,11 @@ if(!isset($_SESSION['name'])) {
         }
     </style>
 </head>
+<div class="logo">
+        <a href="admindboard.php">
+            <img src="image/leftover.png" alt="Logo">
+        </a>
+    </div>
 <body>
 <?php 
     
@@ -41,7 +46,7 @@ if(!isset($_SESSION['name'])) {
     }
 
     ?>
-    <table border="1" style="width:50%">
+    <table border="1" >
         <thead>
             <tr>
                 <th>ID</th>

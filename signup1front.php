@@ -32,6 +32,37 @@
 
     
         </form>
+        <script>
+        let name=document.getElementById("cname");
+        let email=document.getElementById("email");
+        let phone=document.getElementById("phn");
+        let pass=document.getElementById("pass");
+
+        let form=document.getElementsByTagName("form")[0];
+        form.addEventListener("submit",function(e){
+            
+            console.log(email.value);
+            if(name.value==""||email.value==""||phone.value==""||pass.value==""){
+                alert("all field should be filled");
+                e.preventDefault();
+            }
+            if(phone.value.length!==10){
+                alert("Phone number should be 10 digits");
+                e.preventDefault();
+            }
+            if(!phone.value.match("^[98][0-9]*$")){
+                alert("Phone number is not valid(should start with 98)");
+                e.preventDefault();
+            }
+            if(!email.value.match("/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/")){
+                alert("E-mail is not valid");
+                e.preventDefault();
+            }
+            // else{
+            //     alert("Signed up succesfully");
+            // }
+        });
+</script>
 
     </div>
 </body>
